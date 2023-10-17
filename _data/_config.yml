@@ -21,9 +21,7 @@
 title: Cre8tive Wedding and Events
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  With over 25 years of experience, Cre8tiveLA will take your party to the next level whether it's a Wedding, Quinceañera, Corporate Event, or Private Party!
 about: >- # this means to ignore newlines until "baseurl:"
   This will be the about text
 baseurl: "" # the subpath of your site, e.g. /blog

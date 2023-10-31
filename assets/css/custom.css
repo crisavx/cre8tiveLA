@@ -17,11 +17,21 @@
   opacity: 0.5;
   transition: 0.6s;
 }
-
 .portfolio-img:hover > .portfolio-text{
   opacity: 1;
   transition: 0.60s;
 }
+
+.portfolio-text2 {
+  transition: 0.6s;
+}
+
+.portfolio-img:hover > .portfolio-text2{
+  opacity: 0.5;
+  transition: 0.60s;
+}
+
+
 
 .gallery img{
   width: 100%;

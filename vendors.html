@@ -84,16 +84,35 @@ permalink: /vendors/
         <!-- <h5 class="fw-normal mb-2">{{vendor.name}}</h5> -->
         <ul class="list-inline social-buttons">
           <li class="list-inline-item">
-            <a href="{{vendor.ig-link}}" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
             <a href="{{vendor.gal-link}}" target="_blank">
               <i class="bi bi-book"></i>
             </a>
           </li>
-          {% if vendor.title != "Photography by Ricardo Barrera" %}
+          {% if vendor.title == "Photography by Ricardo" %}
+          <li class="list-inline-item">
+            <a href="{{vendor.ig-link}}" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          {% endif %} {% if vendor.title == "Lux Hair Studio" %}
+          <li class="list-inline-item">
+            <a href="{{vendor.ig-link}}" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          {% endif %} {% if vendor.title == "Analexa's Events" %}
+          <li class="list-inline-item">
+            <a href="{{vendor.ig-link}}" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          {% endif %} {% if vendor.title == "Lux Hair Studio" %}
+          <li class="list-inline-item">
+            <a href="{{vendor.yelp-link}}" target="_blank">
+              <i class="fab fa-yelp"></i>
+            </a>
+          </li>
+          {% endif %} {% if vendor.title == "Analexa's Events" %}
           <li class="list-inline-item">
             <a href="{{vendor.yelp-link}}" target="_blank">
               <i class="fab fa-yelp"></i>

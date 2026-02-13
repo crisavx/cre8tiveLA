@@ -58,3 +58,8 @@
   bottom: 5rem!important;
 
 }
+
+.venue-about-btn:hover {
+  background-color: #E03800!important;
+  color: black!important;
+}

@@ -15,11 +15,63 @@
 </button>
 <div class="collapse navbar-collapse p-4" id="navbarResponsive">
   <ul class="navbar-nav text-uppercase ml-auto">
+    {% if page.url == '/wcrb/' or page.url contains '/wcrb/' %}
+
+    <!-- Venue-specific nav items -->
+    <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/">Cre8tive LA</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/wcrb/about">About WCRB</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/wcrb/services"
+        >WCRB Services</a
+      >
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
+    </li>
+
+    <li class="nav-item">
+      <!-- Example split danger button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          style="
+            font-size: 90%;
+            padding: 14.4px;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 1px;
+          "
+        >
+          DOWNLOADS
+        </button>
+        
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="/wcrb/brochure">BROCHURE</a></li>
+          <li><a class="dropdown-item" href="/wcrb/plans">PLANS</a></li>
+          <li><a class="dropdown-item" href="/wcrb/rentals">RENTALS</a></li>
+        
+        </ul>
+      </div>
+    </li>
+
+    {% else %}
+
+    <!-- Default nav items -->
     <li class="nav-item">
       <a class="nav-link js-scroll-trigger" href="/services">Services</a>
     </li>
-
-    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#portfolio">Portfolio</a></li> -->
 
     <li class="nav-item">
       <a class="nav-link js-scroll-trigger" href="/about">About</a>
@@ -41,12 +93,10 @@
       <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
     </li>
 
-    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#timeline">Timeline</a></li> -->
-
-    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#team">Team</a></li> -->
-
     <li class="nav-item">
       <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
     </li>
+
+    {% endif %}
   </ul>
 </div>
